@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/hello', function(req, res, next) {
-  io.emit('chat message', "Hello World");
+  io.emit('chat message', "Hola Mi amor");
 });
 
 io.on('connection', function(socket){
