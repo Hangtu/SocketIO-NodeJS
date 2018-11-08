@@ -18,3 +18,26 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 module.exports = app;
+
+/*
+ function isiPhone(){
+        return (
+            (navigator.platform.indexOf("iPhone") != -1) ||
+            (navigator.platform.indexOf("iPod") != -1)
+        );
+    }
+    var lostFocus = function() {
+        setTimeout(function(){
+        var value = $('#citi-autocomplete-content-searchbox-livesearch').val();
+            $('#citi-autocomplete-content-searchbox-livesearch').val('').focus().val(value);},-1);
+    };
+    if(isiPhone()){
+        $('body').on('blur','#citi-autocomplete-content-searchbox-livesearch', function(e){   
+         $(this).focus();
+         e.stopImmediatePropagation();
+         e.preventDefault();   //prevent the click from jumping esp on hashes
+        //lostFocus();
+         e.stopPropagation();
+       });
+    }
+*/
